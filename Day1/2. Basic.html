@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <p>==============================================================================================</p>
+
+    <h1>제목 태그</h1>
+    
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+<!-- 제목 태그  -->
+
+<p>==============================================================================================</p>
+
+<h1>단락 태그</h1>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+<!-- 단락 태그 = 문장의 한줄 표기할떄 쓴다? 정도로 알면된다-->
+
+<p>==============================================================================================</p>
+
+<h1>단락 태그2</h1>
+<pre>
+This is a paragraph.
+
+This is another paragraph.
+</pre>
+<!-- 공백 포함하여 표출된다.-->
+
+<p>==============================================================================================</p>
+
+<h1>이미지 태그</h1>
+<img src="w3schools.jpg" alt="the image for some reason cannot be displayed" width="104" height="142">
+<!-- 이미지 태그 alt = "이미지가 표지 되지않을경우 테스트문자로 보인다."-->
+<p>==============================================================================================</p>
+<h1>줄바꿈<br>태그</h1>
+<!-- 줄바꿈 태그 -->
+<p>==============================================================================================</p>
+<h1>하이퍼링크 태그</h1>
+<a href="https://www.w3schools.com" >Visit W3Schools </a>
+<!-- 하이퍼링크 태그 -->
+<p>==============================================================================================</p>
+<h1>목록만들기</h1>
+<ul>
+  <li>강아지</li>
+  <li>고양이</li>
+  <li>거북이</li>
+  <li>햄스터</li>
+</ul>
+<p>==============================================================================================</p>
+<h1>테이블만들기</h1>
+ <table border="1">
+    <!-- border = "테두리 표기 >숫자 높을수록 진하게 표기 없으면 테두리 없음" -->
+    <caption>
+      <strong>국가대표 선수 명단</strong>
+      <br>
+      남자 마라톤
+    </caption>
+        <!-- caption 테이블 제목 표기 -->
+    <tr>
+      <th>한국 선수</th>
+      <th>일본 선수</th>
+      <th>미국 선수</th>
+    </tr>
+    <tr>
+      <td>김철수</td>
+      <td>오오다</td>
+      <td>제임스</td>
+    </tr>
+     <!-- tr = 행 td = 열-->
+  </table>
+<!-- 테이블 태그 -->
+<p>==============================================================================================</p>
+<h1>입력 창만들기</h1>
+<label>아이디</label>
+<br>
+<input type="text" placeholder="아이디를 입력하세요">
+<!-- type = 형식 ,  placeholder = 입력태그안에 표기되는 글자-->
+<br>
+<label>비밀번호</label>
+<!-- 입력 태그에 붙히는 라벨 > 그냥 입력창 설명하는 테스트 -->
+<br>
+<input type="password" placeholder="비밀번호를 입력하세요">
+<!-- 입력 태그 -->
+<p>==============================================================================================</p>
+<h1>드롭다운 메뉴</h1>
+<select>
+    <option value="coffee">커피</option>
+    <option value="coke">콜라</option>
+    <option value="juice">쥬스</option>
+    <option value="water" selected>생수</option>
+    <option value="tea">녹차</option>
+    <option value="beer">맥주</option>
+  </select>
+
+  <select size="3" multiple>
+    <option>커피</option>
+    <option>콜라</option>
+    <option>쥬스</option>
+    <option>생수</option>
+    <option>녹차</option>
+    <option>맥주</option>
+  </select>
+<!-- 드롭다운 태그 value = 서버에 넘기는 데이터 값 -->
+<p>==============================================================================================</p>
+<h1>진척도 표기</h1>
+
+    <p>작업 진행 중... 60%...</p>
+    <progress value="60" max="100"></progress>
+ 
+<!-- 프로그래스 태그 -->
+<p>==============================================================================================</p>
+<h1>선택지(체크박스+라디오)</h1>
+<p>좋아하는 과목을 하나만 고르세요</p>
+<input type="radio" name="subject">국어 
+<input type="radio" name="subject">영어 
+<input type="radio" name="subject">수학 
+
+<p>좋아하는 음식을 모두 고르세요</p>
+<input type="checkbox" name="food">제육볶음 
+<input type="checkbox" name="food">돈까스 
+<input type="checkbox" name="food">떡볶이 
+<!-- 체크박스 + 라디오 태그 -->
+<p>==============================================================================================</p>
+<h1>버튼</h1>
+<input type="button" value="PUSH">
+<!-- 버튼 태그 value = 서버에 넘기는 값-->
+<p>==============================================================================================</p>
+
+<h1>form 만들기</h1>
+<form method="post" action="fake_server.php">
+    <!-- 폼 태그 :  입력요소에 입력한 값을들 서버로 전송해주는 역활하는 형식
+    method = http 요청 형식, action = 요청하는 페이지로 이용-->
+    <label for="name">이름</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="age">나이</label>
+    <input type="number" id="age" name="age">
+    <br>
+    <label for="character">성격</label>
+    <textarea id="character" name="character"></textarea>
+    <br>
+    <input type="submit" value="전송">
+    <!-- type="submit"는 type="button"과 보여주는건 같으나 
+        submit은 실제 서버로 데이터를 전송하는 기능
+        button은 그냥 버튼의 기능-->
+  </form>
+
+<p>==============================================================================================</p>
+<h1>비디오와 오디오</h1>
+
+
+ <audio src="./happydog.mp3" controls></audio>
+  <!-- 컨트롤 패널로 재생할 수 있는 오디오 -->
+
+ <audio src="./happydog.mp3" autoplay loop></audio>
+  <!-- 자동으로 재생되고 반복 재생되는 오디오 -->
+<br><br>
+
+<video src="my-cat.mp4" controls></video>
+  <!-- 비디오 태그 = 한개가 아닌 여러개의 영상을 넣어서 볼수도있다.-->
+<p>==============================================================================================</p>
+</body>
+</html>
